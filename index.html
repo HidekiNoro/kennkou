@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康情報サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>健康情報サイト</h1>
+        <p>健康についての情報をまとめるサイト</p>
+    </header>
+    <main>
+        <section id="add-content">
+            <h2>新しい記事を追加</h2>
+            <form id="content-form">
+                <label for="title">タイトル:</label>
+                <input type="text" id="title" name="title" required><br><br>
+                <label for="source">資料元:</label>
+                <input type="text" id="source" name="source" required><br><br>
+                <label for="content">内容:</label>
+                <textarea id="content" name="content" rows="5" required></textarea><br><br>
+                <button type="submit">追加</button>
+            </form>
+        </section>
+        <section id="content-list">
+            <h2>記事一覧</h2>
+            <ul id="articles"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 健康情報サイト</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
